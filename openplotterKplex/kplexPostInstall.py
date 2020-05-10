@@ -35,7 +35,7 @@ def main():
 		'After=syslog.target network.target audit.service\n'+
 		'[Service]\n'+
 		'Type=forking\n'+
-		'PIDFILE=/var/run/kplex.pid\n'+
+		'PIDFile=/var/run/kplex.pid\n'+
 		'ExecStart=/usr/bin/kplex -p /var/run/kplex.pid -o mode=background\n'+
 		'KillMode=process\n'+
 		'[Install]\n'+
